@@ -8,6 +8,7 @@ ENV JAVA_HOME       /usr/lib/jvm/java-8-oracle
 
 RUN apt update && \
     apt install -y fontconfig-config libfontconfig1 && \
+    apt -f install && \
 #   apt install -y fontconfig && fc-cache –fv && \
 #   apt install ttf-mscorefonts-installer && \
 #   apt install -y --no-install-recommends locales && \
