@@ -7,10 +7,6 @@ ENV JAVA_HOME       /usr/lib/jvm/java-8-oracle
 #ENV LC_ALL          en_US.UTF-8
 
 RUN apt update && \
-    apt install -y fontconfig-config libfontconfig1 && \
-    apt install -f && \
-#   apt install -y fontconfig && fc-cache –fv && \
-#   apt install ttf-mscorefonts-installer && \
 #   apt install -y --no-install-recommends locales && \
 #   locale-gen en_US.UTF-8 && \
 #   apt dist-upgrade -y && \
@@ -20,5 +16,9 @@ RUN apt update && \
     apt-key adv --keyserver keyserver.ubuntu.com --recv-keys EEA14886 && \
     apt update && \
     apt install -y --no-install-recommends oracle-java8-installer oracle-java8-set-default && \
-    apt clean all
+    apt install -y fontconfig-config libfontconfig1 && \
+#   apt install -y fontconfig && fc-cache –fv && \
+#   apt install ttf-mscorefonts-installer && \
+    apt clean all && \
+    dpkg-reconfigure fontconfig
     
