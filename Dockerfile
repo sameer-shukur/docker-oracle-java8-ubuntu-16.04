@@ -8,6 +8,6 @@ RUN apt update && \
     add-apt-repository ppa:webupd8team/java && \
     apt update && \
     apt install -y oracle-java8-installer oracle-java8-set-default && \
-    apt install -y fontconfig-config libfontconfig1 && \
+    apt install -y fontconfig-config libfontconfig1
 #   dpkg-reconfigure fontconfig
     
