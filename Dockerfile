@@ -2,7 +2,6 @@ FROM ubuntu:16.04
 LABEL MAINTAINER Paulo Salgado <pjosalgado@gmail.com>
 
 ENV JAVA_HOME /usr/lib/jvm/java-8-oracle
-
 ENV LANG en_US.UTF-8
 
 RUN apt update \
