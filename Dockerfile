@@ -11,5 +11,6 @@ RUN apt update \
     && echo "deb http://ppa.launchpad.net/webupd8team/java/ubuntu xenial main" > /etc/apt/sources.list.d/webupd8team-java-trusty.list \
     && apt-key adv --keyserver keyserver.ubuntu.com --recv-keys EEA14886 \
     && apt update \
-    && apt install -y oracle-java8-installer oracle-java8-set-default fontconfig-config libfontconfig1 locales \
+    && apt install -y oracle-java8-installer oracle-java8-set-default locales \
     && locale-gen en_US.UTF-8
+    && apt install -y fontconfig-config libfontconfig1 \
