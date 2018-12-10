@@ -11,5 +11,5 @@ RUN apt update \
     && apt-key adv --keyserver keyserver.ubuntu.com --recv-keys EEA14886 \
     && apt update \
     && apt install -y oracle-java8-installer oracle-java8-set-default locales \
-    && locale-gen en_US.UTF-8
+    && locale-gen en_US.UTF-8 \
     && apt install -y fontconfig-config libfontconfig1 \
