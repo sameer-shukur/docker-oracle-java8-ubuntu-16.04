@@ -1,5 +1,5 @@
 FROM ubuntu:16.04
-LABEL MAINTAINER Paulo Salgado <pjosalgado@gmail.com>
+LABEL MAINTAINER Sameershukur <sameer.shukur.m@gmail.com>
 
 ENV DEBIAN_FRONTEND noninteractive
 ENV JAVA_HOME       /usr/lib/jvm/java-8-oracle
